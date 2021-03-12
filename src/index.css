@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2 {
+  font-family: 'EB Garamond', serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+
+div.top-nav {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+div.top-nav h1 {
+  margin-right: 60px;
+  align-self: center;
+}
+
+div.nav-bar {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-left: 50px;
+  align-items: center;
+}
+
+div.nav-bar p {
+  color: black;
+  margin: 10px;
+  align-self: center;
+  margin-right: 30px;
+}
+
+div.page-one {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+}
+
+div.container {
+  display: flex;
+  flex: 1;
+  margin-bottom: 300px;
+  align-items: center;
+
+}
+
+div.item1 {
+}
+
+div.item2 {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+div.item2 img {
+  justify-content: center;
+}
+
+div.row-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 300px;
+  align-items: center;
+}
+
+html {
+  background-color: #F5EFE2;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+}
+
+button {
+  background-color: transparent;
+  font-size: 30px;
+  border-radius: 25px;
+}
+
+button p {
+  font-size: 30;
+}
+
+div#writeUpLeft {
+  margin-left: 40px;
+  margin-right: 8vw;
+
+}
+
+img#writeup-rating-scale {
+  max-width: 474px;
+  max-height: 128px;
+}
+
+div#writeup p{
+  font-size: 25px;
+}
+
+
+div#writeup-category {
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+
+div#writeup-category p{
+  margin-left: 5vw;
+}
+
+
+input#searchbar {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 12px;
+  flex-basis: 2;
+  flex-grow: 1;
+}
+
+
+button#searchbar {
+  background-color: transparent;
+  padding: 11px;
+  border-radius: 12px;
+}
+
+
+img#brand-logo {
+  max-width: 114.76px;
+  max-height: 72px;
+}
+
+div#search-item {
+  background-color: white;
+  flex: 1;
+}
+
+img#smiley {
+  max-width: 61px;
+  max-height: 61px;
+  margin-right: 20px;
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+img#alternativeImg {
+  max-width: 286px;
+  max-height: 286px;
+  margin: 10px;
+}
