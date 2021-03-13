@@ -5,8 +5,10 @@ https://nodejs.org/en/
 
 2. Clone the repository
 
-3. run the command "npm install"
+3. Open terminal and "cd" into the repository
 
-4. run the command "npm start" to load the landing page.
+5. run the command "npm install"
+
+5. run the command "npm start" to load the landing page.
 
 
