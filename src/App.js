@@ -4,7 +4,7 @@ import HomePage from './HomePage.js';
 import BrandSearchPage from './BrandSearchPage.js';
 import WriteUpPage from './WriteUpPage.js';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
