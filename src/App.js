@@ -16,15 +16,12 @@ function App() {
       <Router>
         <div class = "top-nav">
           <div class = "nav-bar">
-              <Link to="/home"><p style = {{fontSize: '30px'}}><a>Home</a></p></Link>
+              <Link to="/"><p style = {{fontSize: '30px'}}><a>Home</a></p></Link>
               <Link to="/search"><p style = {{fontSize: '30px'}}><a>Brand Search Index</a></p></Link>
           </div>
           <h1 style = {{fontSize: '48px', paddingLeft: 10, paddingRight: 10}}>Root</h1>
         </div>
       <Switch>
-        <Route path="/home">
-            <HomePage />
-        </Route>
         <Route path="/search">
             <BrandSearchPage />
         </Route>
@@ -32,6 +29,11 @@ function App() {
         <Route path="/writeup">
             <WriteUpPage />
         </Route>
+
+        <Route path="/">
+            <HomePage />
+        </Route>
+        
       </Switch>
     </Router>
         
