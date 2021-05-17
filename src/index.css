@@ -1,20 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-h1, h2 {
+a {
+  font-family: 'EB Garamond', serif;
+}
+h1, h2, h3{
   font-family: 'EB Garamond', serif;
   font-weight: normal;
   font-size: 50px;
 }
 
+h3 {
+  font-size: 30px;
+}
+p {
+  font-family: 'Karla', sans-serif;
+}
 
 div.top-nav {
   display: flex;
@@ -55,8 +61,12 @@ div.container {
   align-items: center;
 
 }
+a {
+  text-decoration: none;
+}
 
-div.item1 {
+a:hover {
+  text-decoration: underline;
 }
 
 div.item2 {
@@ -82,9 +92,6 @@ html {
   background-color: #F5EFE2;
 }
 
-p {
-  font-family: 'EB Garamond', serif;
-}
 
 button {
   background-color: transparent;
@@ -111,6 +118,10 @@ div#writeup p{
   font-size: 25px;
 }
 
+img#writeup-logo {
+  max-width: 755px;
+  max-height: 495px;
+}
 
 div#writeup-category {
   margin-left: 8vw;
@@ -141,7 +152,10 @@ button#searchbar {
 img#brand-logo {
   max-width: 114.76px;
   max-height: 72px;
+  justify-self: center;
+  vertical-align: middle;
 }
+
 
 div#search-item {
   background-color: white;
@@ -163,4 +177,14 @@ img#alternativeImg {
   max-width: 286px;
   max-height: 286px;
   margin: 10px;
+}
+
+input.form-input {
+  margin-top: 40px;
+  font-size: 25px;
+  width:50%;
+  padding: 10px;
+  font-family: 'Karla', sans-serif;
+  border-color: black;
+  border-width: 1px;
 }

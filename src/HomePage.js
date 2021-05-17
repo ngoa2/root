@@ -4,6 +4,7 @@ import graphic3 from './imgs/browser-screencaps.png';
 import graphic4 from './imgs/search-bar.png';
 import graphic5 from './imgs/fact-image1.png';
 import graphic6 from './imgs/fact-image2.png';
+import GroupReference from './GroupReference';
 
 function HomePage() {
   return (
@@ -13,7 +14,7 @@ function HomePage() {
           <div className = "item1">
             <p style ={{fontSize: 50}}>We help you<br></br>make ethical and<br></br>sustainable choices.</p>
             <p style ={{fontSize: 30}}>Use our plugin to help you stay mindful during<br></br>your shopping experience.</p>
-            <button style ={{marginTop: 100}}><p>Add to Chrome (it's free!)</p></button>
+            <a href="https://github.com/ngoa2/rootExtension" target="_blank"><button style ={{marginTop: 100}}><p>Add to Chrome (it's free!)</p></button></a>
 
           </div>
 
@@ -60,9 +61,9 @@ function HomePage() {
         <img src = {graphic6} style = {{maxWidth: "638.75px", maxHeight: "425px"}}/>
         <p style = {{fontSize: "40px", marginLeft: "50px"}}>We demand radical transparency.</p>
       </div>
-
+      <GroupReference></GroupReference>
+      <p>On June 20th, the Root capstone project and landing page will be shutting down.</p>
     </div>
-
   );
 }
 

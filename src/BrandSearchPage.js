@@ -6,9 +6,13 @@ class BrandSearchPage extends React.Component {
 
   state = {
     names: [
-      "Forever 21",
-      "Forever Alone",
-      "Forver Young",
+      "Zara",
+      "Nike",
+      "Patagonia",
+      "Everlane",
+      "Uniqlo",
+      "Allbirds",
+      "HM",
     ], 
     searchTerm: ''
   }
@@ -34,6 +38,7 @@ class BrandSearchPage extends React.Component {
                 <button id = "searchbar">Search</button>
               </div>
               <SearchContainer brands = {this.dynamicSearch()}/>
+              <a id = "clearbit-logo" href="https://clearbit.com" target="_blank">Logos provided by Clearbit</a>
             </div>
         </div>
     </div>
