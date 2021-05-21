@@ -70,19 +70,20 @@ class App extends React.Component{
             <WriteUpPage brandTitle="Zara" logoSrc="zara.png" altBrands="Reformation,Ganni,Hopaal"/>
         </Route>
 
-        <Route path="/writeup/reformation">
-            <WriteUpPage brandTitle="Reformation" logoSrc="reformation.png" altBrands="Synergy,Ganni,Hopaal"/>
-        </Route>
 
         <Route path="/writeup/hm">
             <WriteUpPage brandTitle="HM" logoSrc="hm.png" altBrands="Kotn,Reformation,BackBeat"/>
+        </Route>
+
+        <Route path="/writeup/thereformation">
+            <YetRatePage brandTitle="Reformation" />
         </Route>
 
         <Route path="/writeup/adidas">
             <YetRatePage brandTitle="Adidas"/>
         </Route>
 
-        <Route path="/writeup/bleed">
+        <Route path="/writeup/bleed-clothing">
             <YetRatePage brandTitle="Bleed Clothing"/>
         </Route>
 
@@ -90,16 +91,16 @@ class App extends React.Component{
             <YetRatePage brandTitle="Kotn"/>
         </Route>
 
-        <Route path="/writeup/synergy">
+        <Route path="/writeup/synergyclothing">
             <YetRatePage brandTitle="Synergy"/>
         </Route>
 
-        <Route path="/writeup/pact">
+        <Route path="/writeup/wearpact">
             <YetRatePage brandTitle="Pact"/>
         </Route>
 
         <Route path="/writeup/ganni">
-            <YetRatePage brandTitle="Hopaal"/>
+            <YetRatePage brandTitle="Ganni"/>
         </Route>
 
         <Route path="/writeup/houdinisportswear">
@@ -116,6 +117,10 @@ class App extends React.Component{
 
         <Route path="/writeup/finisterre">
             <YetRatePage brandTitle="Finisterre"/>
+        </Route>
+
+        <Route path="/writeup/hopaal">
+            <YetRatePage brandTitle="Hopaal"/>
         </Route>
 
         <Route path="/">
