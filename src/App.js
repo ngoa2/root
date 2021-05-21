@@ -11,6 +11,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import YetRatePage from './YetRatePage';
 
 const TITLE = 'Root'
 class App extends React.Component{
@@ -75,6 +76,10 @@ class App extends React.Component{
 
         <Route path="/writeup/hm">
             <WriteUpPage brandTitle="HM" logoSrc="hm.png" altBrands="Kotn,Reformation,BackBeat"/>
+        </Route>
+
+        <Route path="/writeup/adidas">
+            <YetRatePage brandTitle="Adidas"/>
         </Route>
 
         <Route path="/">
