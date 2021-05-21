@@ -102,7 +102,7 @@ class App extends React.Component{
             <YetRatePage brandTitle="Hopaal"/>
         </Route>
 
-        <Route path="/writeup/houdini">
+        <Route path="/writeup/houdinisportswear">
             <YetRatePage brandTitle="Houdini"/>
         </Route>
 
