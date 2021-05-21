@@ -82,6 +82,42 @@ class App extends React.Component{
             <YetRatePage brandTitle="Adidas"/>
         </Route>
 
+        <Route path="/writeup/bleed">
+            <YetRatePage brandTitle="Bleed Clothing"/>
+        </Route>
+
+        <Route path="/writeup/kotn">
+            <YetRatePage brandTitle="Kotn"/>
+        </Route>
+
+        <Route path="/writeup/synergy">
+            <YetRatePage brandTitle="Synergy"/>
+        </Route>
+
+        <Route path="/writeup/pact">
+            <YetRatePage brandTitle="Pact"/>
+        </Route>
+
+        <Route path="/writeup/ganni">
+            <YetRatePage brandTitle="Hopaal"/>
+        </Route>
+
+        <Route path="/writeup/houdini">
+            <YetRatePage brandTitle="Houdini"/>
+        </Route>
+
+        <Route path="/writeup/backbeat">
+            <YetRatePage brandTitle="Back Beat"/>
+        </Route>
+
+        <Route path="/writeup/superstainable">
+            <YetRatePage brandTitle="Superstainable"/>
+        </Route>
+
+        <Route path="/writeup/finisterre">
+            <YetRatePage brandTitle="Houdini"/>
+        </Route>
+
         <Route path="/">
             <HomePage />
         </Route>
