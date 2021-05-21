@@ -115,7 +115,7 @@ class App extends React.Component{
         </Route>
 
         <Route path="/writeup/finisterre">
-            <YetRatePage brandTitle="Houdini"/>
+            <YetRatePage brandTitle="Finisterre"/>
         </Route>
 
         <Route path="/">
