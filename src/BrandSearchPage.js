@@ -38,8 +38,8 @@ class BrandSearchPage extends React.Component {
                 <button id = "searchbar">Search</button>
               </div>
               <SearchContainer brands = {this.dynamicSearch()}/>
-              <a id = "clearbit-logo" href="https://clearbit.com" target="_blank">Logos provided by Clearbit</a>
             </div>
+            <a id = "clearbit-logo" href="https://clearbit.com" target="_blank">Logos provided by Clearbit</a>
         </div>
     </div>
   );

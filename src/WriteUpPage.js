@@ -7,10 +7,6 @@ import rating7 from "./imgs/7rating.png";
 import rating8 from "./imgs/8rating.png";
 import rating9 from "./imgs/9rating.png";
 
-
-import kotn from "./imgs/kotn.png";
-import pact from "./imgs/pact.png";
-import hos from "./imgs/house-of-sunny.png";
 import React, {Component} from 'react';
 
 class WriteUpPage extends React.Component{
@@ -135,6 +131,32 @@ class WriteUpPage extends React.Component{
         "Uses wool and leather",
         "No textile waste reduction initiatives"
       ]
+
+      let materials = [
+        "100% organic cotton",
+        "recycled materials", 
+        "eco-friendly materials", 
+        "ZQ Merino Certified Wool", 
+        "tencel", 
+        "hemp", 
+        "low impact dyes"
+      ]
+
+      let animals = [
+        "Uses wool and leather", "No exotic animal use", "Uses blend of recycled wool",  "uses exotic animal hair", "vegan products",
+      ]
+
+      let waste = ["100% renewable energy", "Water usage reduction", "Chemical usage reduction", "No textile waste reduction initiatives","No chemical waste reduction initiatives", "100% renewable energy"]
+
+      let et = ["100% living wage", "freedom of association", "living wage initiatives", "code of conduct", "unfavorable working conditions", "child labor policies", "no guarantee of living wage", "no COVID-19 worker protection", "unclear living wage payments", "nondiscrimination policies"]
+      
+      let report = ["reports available online"]
+
+      let certification = ["FLA Workplace Code of Conduct", "Sustainable Apparel Coalition", "OEKO TEX STANDARD 100", "Bluesign certified", "GOTS certification", "B Corps Certification", "Fair Trade Certified"]
+
+      let supplyT = ["low supply chain transparency", "supply chain transparent"]
+
+
       // rating bar
       let Average = this.state.brand.Average;
       let imgSrc = "./imgs/1rating.png"
@@ -168,11 +190,19 @@ class WriteUpPage extends React.Component{
       let tagString = this.state.brand.Tags;
       let tagArr = tagString.split(",");
       let goodSus = "";
-      let badSus = "";
       let goodEth = "";
-      let badEth ="";
       let goodT = "";
+      let badSus = "";
+      let badEth ="";
       let badT = "";
+      let reportTag = "does not have";
+      let certTag = "";
+
+      let wasteTag = "any disclosed means";
+      let wasteChoice = "does not"
+      let animalHairTag = "wool and leather use";
+      let animalHairChoice = "bad"
+
       for (let i = 0; i < tagArr.length; i++) {
         let tagName = tagArr[i].trim()
 
@@ -194,6 +224,24 @@ class WriteUpPage extends React.Component{
 
         } else if (SusTags.includes(tagName) && badTags.includes(tagName)){
           badT = tagName
+        }
+
+        if (certification.includes(tagName)) {
+          certTag = tagName
+        }
+
+        if (report.includes(tagName)) {
+          reportTag = "has";
+        }
+
+        if (animals.includes(tagName) && goodTags.includes(tagName)) {
+          animalHairChoice = "good"
+          animalHairTag = tagName
+        }
+
+        if (waste.includes(tagName) && goodTags.includes(tagName)) {
+          wasteChoice = "does"
+          wasteTag = tagName
         }
       }
 
@@ -234,13 +282,30 @@ class WriteUpPage extends React.Component{
       let brandName = this.state.brand.BrandName;
       let logoSrc = this.props.logoSrc;
 
+      let altBrands = this.props.altBrands;
+      let altBrandsArr = altBrands.split(",");
+
+      let link1 = "https://root.quest/#/writeup/" + altBrandsArr[0];
+      let src1 = altBrandsArr[0].toLowerCase() + ".png";
+
+      let link2 = "https://root.quest/#/writeup/" + altBrandsArr[1];
+      let src2 = altBrandsArr[1].toLowerCase() + ".png";
+
+      let link3  = "https://root.quest/#/writeup/" + altBrandsArr[2];
+      let src3 = altBrandsArr[2].toLowerCase() + ".png";
+
+      let omitSus = ""
+      if (goodSus != "") {
+        omitSus = "such as "
+      }
+
       return (
-        <div id = "writeup" class = "container" style = {{flexDirection:"column"}}>
-          <div class = "row-container" style = {{marginBottom: '20px'}}>
+        <div id = "writeup">
+          <div class = "row-container" style = {{marginBottom: '20px', flexGrow:0, alignContent:"flex-start", justifyContent: "flex-start", 
+  alignContent: "center", alignItems: "center"}}>
             <img id = "writeup-logo"src = {logoSrc}></img>
             <div id = 'writeUpLeft'>
               <h1>{brandName}</h1>
-              <p>{brandName} is an American multinational sportswear manufacturer that sells footwear, clothing, equipment and services.</p>
             </div>
           </div>
 
@@ -250,33 +315,31 @@ class WriteUpPage extends React.Component{
               <p>We have rated {brandName} a {Average}. This is an average score of a {envRating} in sustainable materials, a {ethRating} in ethical practices, and a {transparency} in supply chain transparency.</p>
               <img id = "writeup-rating-scale" src = {imgSrc}></img>
             </div>
-
           </div>
 
           <div id = "writeup-category">
             <h2>Sustainable Materials</h2>
-            <p>{brandName}’s sustainable materials rating is {envRating}. {brandName} uses {envChoice} sustainable materials such as {goodSus}. {brandName} has bad policies for animal hair use such as Uses wool and leather. {brandName} does practice waste management through {goodSus}. Click here for more explanation on {goodSus}</p>
+            <p>{brandName}’s sustainable materials rating is {envRating}. {brandName} uses {envChoice} sustainable materials {omitSus} {goodSus}. {brandName} has {animalHairChoice} policies for animal hair use such as {animalHairTag}. {brandName} {wasteChoice} practice waste management through {wasteTag}.</p>
           </div>
         
           <div id = "writeup-category">
             <h2>Ethical Practices</h2>  
             <p>{brandName}’s ethical practices rating is {ethRating}. {brandName} has {ethChoice} initiatives to protect their workers{goodEth}. </p>
           </div>
-        
 
-          <div id = "writeup-category">
+          <div id = "writeup-category" style={{marginBottom:70}}>
             <h2>Supply Chain Transparency</h2>
-            <p>{brandName}’s supply chain transparency rating is {transparency}. {brandName} has {tChoice} supply chain transparency. {brandName} does have reports available online about their practices. The brand also has certifications such as Moderate supply chain transparency which is evidence for transparency in the supply chain.</p>
+            <p> {brandName}’s Supply chain transparency rating is {transparency}. {brandName} has {tChoice} supply chain transparency. {brandName} {reportTag} reports available online about their practices. The brand also has certifications such as {certTag} which is evidence for transparency in the supply chain.</p>
           </div>
-
+{/* 
           <div id = "writeup-category">
             <h2>Sustainable Alternatives</h2>
             <div class ="row-container" style={{marginBottom:70}}>
-              <img id = "alternativeImg" src = {kotn}></img>
-              <img id = "alternativeImg" src = {pact}></img>
-              <img id = "alternativeImg" src = {hos}></img>
+            <a href={link1}><img id = "alternativeImg" src = {src1}></img></a>
+            <a href={link2}><img id = "alternativeImg" src = {src2}></img></a>
+            <a href={link3}><img id = "alternativeImg" src = {src3}></img></a>
             </div>
-          </div>
+          </div>  */}
         </div>
 
 

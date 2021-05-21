@@ -46,35 +46,35 @@ class App extends React.Component{
         </Route>
 
         <Route path="/writeup/nike">
-            <WriteUpPage brandTitle="Nike" logoSrc="nike.png"/>
+            <WriteUpPage brandTitle="Nike" logoSrc="nike.png" altBrands="Adidas,Patagonia,Bleed"/>
         </Route>
 
         <Route path="/writeup/patagonia">
-            <WriteUpPage brandTitle="Patagonia" logoSrc="patagonia.png"/>
+            <WriteUpPage brandTitle="Patagonia" logoSrc="patagonia.png" altBrands="Houdini,Finisterre,Superstainable"/>
         </Route>
 
         <Route path="/writeup/allbirds">
-            <WriteUpPage brandTitle="Allbirds" logoSrc="allbirds.png"/>
+            <WriteUpPage brandTitle="Allbirds" logoSrc="allbirds.png" altBrands="Adidas,Kotn,Bleed"/>
         </Route>
 
         <Route path="/writeup/uniqlo">
-            <WriteUpPage brandTitle="Uniqlo" logoSrc="uniqlo.png" />
+            <WriteUpPage brandTitle="Uniqlo" logoSrc="uniqlo.png" altBrands="Synergy,Pact,Bleed"/>
         </Route>
 
         <Route path="/writeup/everlane">
-            <WriteUpPage brandTitle="Everlane" logoSrc="everlane.png"/>
+            <WriteUpPage brandTitle="Everlane" logoSrc="everlane.png" altBrands="Hopaal,Kotn,Synergy"/>
         </Route>
 
         <Route path="/writeup/zara">
-            <WriteUpPage brandTitle="Zara" logoSrc="zara.png"/>
+            <WriteUpPage brandTitle="Zara" logoSrc="zara.png" altBrands="Reformation,Ganni,Hopaal"/>
         </Route>
 
         <Route path="/writeup/reformation">
-            <WriteUpPage brandTitle="Reformation" logoSrc="reformation.png"/>
+            <WriteUpPage brandTitle="Reformation" logoSrc="reformation.png" altBrands="Synergy,Ganni,Hopaal"/>
         </Route>
 
         <Route path="/writeup/hm">
-            <WriteUpPage brandTitle="HM" logoSrc="hm.png"/>
+            <WriteUpPage brandTitle="HM" logoSrc="hm.png" altBrands="Kotn,Reformation,BackBeat"/>
         </Route>
 
         <Route path="/">

@@ -19,6 +19,7 @@ Information School developing this as our Capstone project.</h2>
                 <img src={sam}></img>
                 <img src={alan}></img>
             </div>
+            <p>On June 20th, the Root capstone project and landing page will be shutting down.</p>
         </div>
     );
   }

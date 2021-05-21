@@ -61,6 +61,14 @@ div.container {
   align-items: center;
 
 }
+
+div#writeup {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: 300px;
+}
+
 a {
   text-decoration: none;
 }
@@ -187,4 +195,9 @@ input.form-input {
   font-family: 'Karla', sans-serif;
   border-color: black;
   border-width: 1px;
+}
+
+a#clearbit-logo {
+  position: relative;
+  margin-bottom: 30px;
 }

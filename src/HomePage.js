@@ -62,7 +62,6 @@ function HomePage() {
         <p style = {{fontSize: "40px", marginLeft: "50px"}}>We demand radical transparency.</p>
       </div>
       <GroupReference></GroupReference>
-      <p>On June 20th, the Root capstone project and landing page will be shutting down.</p>
     </div>
   );
 }
